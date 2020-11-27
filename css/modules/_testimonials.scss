@@ -1,0 +1,32 @@
+.view {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials {
+  margin: 0;
+  padding-inline-start: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 1158px;
+  padding: 4.5rem 1.5rem;
+}
+
+@media (max-width: 1439px) {
+  .testimonials > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    gap: 1.5rem 1.875rem;
+  }
+}
